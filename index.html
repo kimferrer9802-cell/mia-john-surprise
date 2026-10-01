@@ -60,15 +60,24 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}h1{font-size:58p
     <div class="song-note">Press play, then keep scrolling. 🎵</div><div class="playrow"><button class="primary" id="playBtn" onclick="startMusic()">▶ PLAY SONG</button></div>
   </div>
 
+  <audio id="music" preload="auto" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
   <section class="gallery">
     <div class="section-label">a few moments worth keeping</div><h2>Us, in little pictures. 📸</h2>
     <div class="grid">
-      <div class="photo"><img src="images/photo1.jpeg" alt="Memory 1"></div><div class="photo"><img src="images/photo2.jpeg" alt="Memory 2"></div>
-      <div class="photo"><img src="images/photo3.jpeg" alt="Memory 3"></div><div class="photo"><img src="images/photo4.jpeg" alt="Memory 4"></div>
-      <div class="photo"><img src="images/photo5.jpeg" alt="Memory 5"></div><div class="photo"><img src="images/photo6.jpeg" alt="Memory 6"></div>
-      <div class="photo"><img src="images/photo7.jpeg" alt="Memory 7"></div><div class="photo"><img src="images/photo8.jpeg" alt="Memory 8"></div>
-      <div class="photo"><img src="images/photo9.jpeg" alt="Memory 9"></div><div class="photo"><img src="images/photo10.jpeg" alt="Memory 10"></div>
-    </div>
+  <div class="photo"><img src="images/photo 1.jpeg" alt="Memory 1"></div>
+  <div class="photo"><img src="images/photo 2.jpeg" alt="Memory 2"></div>
+  <div class="photo"><img src="images/photo 3.jpeg" alt="Memory 3"></div>
+  <div class="photo"><img src="images/photo 4.jpeg" alt="Memory 4"></div>
+  <div class="photo"><img src="images/photo 5.jpeg" alt="Memory 5"></div>
+  <div class="photo"><img src="images/photo 6.jpeg" alt="Memory 6"></div>
+  <div class="photo"><img src="images/photo 7.jpeg" alt="Memory 7"></div>
+  <div class="photo"><img src="images/photo 8.jpeg" alt="Memory 8"></div>
+  <div class="photo"><img src="images/photo 9.jpeg" alt="Memory 9"></div>
+  <div class="photo"><img src="images/photo 10.jpeg" alt="Memory 10"></div>
+</div>
   </section>
 
   <section class="note">
@@ -82,9 +91,12 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}h1{font-size:58p
   <div class="heartline">♡ ✦ ♡</div><div class="section-label">okay... one last thing</div><h2>I hope you're still courting me. 🤍</h2>
   <p>Because somewhere between the laughs, the pictures, the little moments, and everything in between...</p>
   <p><b>I think I'm starting to like where this is going. 👀</b></p>
-  <div class="signature">— Mia</div><button class="primary replay" onclick="window.scrollTo({top:0,behavior:'smooth'})">READ IT AGAIN ↻</button>
-</div></section>
-</main>
+  <div class="signature">— Mia</div> 
+  
+  <div class="buttons">
+  <button class="primary replay" onclick="keepCourting()">KEEP COURTING 💗</button>
+  <button class="secondary replay" onclick="window.scrollTo({top:0,behavior:'smooth'})">READ IT AGAIN ↻</button>
+</div>
 
 <div id="player" class="player hidden"><button onclick="toggleMusic()" id="miniBtn">▶</button><span><b>You Became My Peace</b><br>playing while you scroll 🤍</span></div>
 <audio id="music" preload="auto" loop><source src="music.mp3" type="audio/mpeg"></audio>
@@ -98,5 +110,8 @@ function showMusic(){document.getElementById('knew').classList.add('hidden');doc
 const music=document.getElementById('music'),player=document.getElementById('player'),playBtn=document.getElementById('playBtn'),miniBtn=document.getElementById('miniBtn');
 function startMusic(){music.play().then(()=>{player.classList.remove('hidden');playBtn.textContent='❚❚ PAUSE SONG';miniBtn.textContent='❚❚'}).catch(()=>alert('Add the song file named "music.mp3" beside index.html, then tap Play again. 🎵'))}
 function toggleMusic(){if(music.paused){music.play();miniBtn.textContent='❚❚';playBtn.textContent='❚❚ PAUSE SONG'}else{music.pause();miniBtn.textContent='▶';playBtn.textContent='▶ PLAY SONG'}}
+function keepCourting(){
+  alert("Then keep courting me, John. 🤍\n\nI'll be waiting. 👀💗");
+} 
 </script>
 </body></html>
