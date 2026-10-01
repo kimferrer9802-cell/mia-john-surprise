@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Birthday Surprise for John Rafael 🎂</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+:root{--wine:#713f4b;--rose:#b96c7e;--cream:#fffaf4;--ink:#392c31;--gold:#b99058;--soft:#f4e5e1}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--ink);font-family:'DM Sans',sans-serif;background:linear-gradient(180deg,#fffaf4,#f8ebe6 48%,#fffaf5);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#b99058 .7px,transparent .7px);background-size:22px 22px}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative}
+.glow{position:absolute;width:260px;height:260px;border-radius:50%;filter:blur(40px);opacity:.18;background:#d59aab}.g1{top:5%;left:-80px}.g2{right:-100px;bottom:5%;background:#d8b477}
+.card{position:relative;width:min(94vw,500px);padding:42px 28px;background:rgba(255,255,255,.82);border:1px solid rgba(113,63,75,.12);border-radius:32px;box-shadow:0 24px 80px rgba(79,48,57,.15);backdrop-filter:blur(12px);text-align:center}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border-radius:999px;background:#fff1ed;color:var(--wine);font-size:11px;letter-spacing:1.8px;text-transform:uppercase;font-weight:600}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}h1{font-size:58px;line-height:.9;margin:18px 0 12px;color:var(--wine)}h2{font-size:46px;line-height:.95;margin:10px 0 18px;color:var(--wine)}p{line-height:1.8;font-size:14px;color:#6b5b5f}
+.sub{max-width:380px;margin:0 auto}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:27px}button{border:0;border-radius:999px;padding:13px 22px;font:600 12px 'DM Sans',sans-serif;letter-spacing:.4px;cursor:pointer;transition:.25s;box-shadow:0 10px 25px rgba(79,48,57,.12)}button:hover{transform:translateY(-2px) scale(1.03)}.primary{background:var(--wine);color:#fff}.secondary{background:#eee3df;color:#624b52}.tease{height:26px;margin-top:17px;color:var(--rose);font-size:12px}
+.float{position:absolute;color:var(--rose);opacity:.55;font-size:20px;animation:float 4s ease-in-out infinite}.f1{top:15%;left:8%}.f2{top:22%;right:10%;animation-delay:1s}.f3{bottom:15%;left:13%;animation-delay:2s}.f4{bottom:11%;right:15%;animation-delay:.6s}@keyframes float{50%{transform:translateY(-12px) rotate(5deg)}}
+.hidden{display:none!important}.fade{animation:fade .8s ease both}@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+#knew .card{padding-top:48px;padding-bottom:48px}.kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+.content{width:min(94vw,850px);margin:auto;padding:44px 0 100px}.topnote{text-align:center;margin:0 auto 36px;max-width:650px}.topnote h2{margin-bottom:8px}.tiny{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9a777e}
+.music-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff,#fff5ee);border:1px solid rgba(113,63,75,.12);border-radius:32px;padding:32px 24px;text-align:center;box-shadow:0 22px 65px rgba(79,48,57,.12)}
+.music-card:after{content:'♪';position:absolute;right:24px;top:-18px;font:110px 'Cormorant Garamond';color:rgba(185,144,88,.1)}.record{width:112px;height:112px;margin:0 auto 18px;border-radius:50%;background:radial-gradient(circle,#fff 0 7%,#b96c7e 8% 11%,#2d2227 12% 58%,#b96c7e 59% 61%,#21191c 62%);box-shadow:0 12px 28px rgba(0,0,0,.18);position:relative}.record:after{content:"";position:absolute;width:24px;height:24px;border-radius:50%;background:#e7c69a;left:44px;top:44px}.song{font:34px 'Cormorant Garamond';color:var(--wine);margin:4px 0}.song-note{font-size:12px;color:#8d7077}.playrow{margin-top:20px}
+.gallery{margin-top:62px}.section-label{text-align:center;letter-spacing:2.5px;text-transform:uppercase;font-size:10px;color:#9a777e}.gallery h2{text-align:center;margin-top:7px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}.photo{position:relative;overflow:hidden;border-radius:20px;background:#eee;box-shadow:0 9px 28px rgba(79,48,57,.13)}.photo:nth-child(3n){transform:translateY(12px)}.photo img{display:block;width:100%;height:300px;object-fit:cover;transition:.45s}.photo:nth-child(3n) img{height:365px}.photo:hover img{transform:scale(1.035)}
+.note{margin:70px 0 20px;padding:46px 28px;text-align:center;background:#fff;border:1px solid rgba(113,63,75,.1);border-radius:32px;box-shadow:0 20px 55px rgba(79,48,57,.1)}.note h2{margin-bottom:10px}.birthday{font:29px 'Cormorant Garamond';color:var(--wine);margin:12px 0 20px}.note p{font-size:14px;max-width:610px;margin:10px auto}
+.final{min-height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 18px 130px;position:relative}.final-card{max-width:650px}.final h2{font-size:55px}.heartline{font-size:26px;color:var(--rose);letter-spacing:8px;margin:15px 0}.signature{font:27px 'Cormorant Garamond';color:var(--wine);margin-top:25px}.replay{margin-top:25px}
+.player{position:fixed;z-index:30;left:50%;bottom:14px;transform:translateX(-50%);width:min(92vw,540px);padding:11px 14px;background:rgba(49,34,39,.95);color:white;border-radius:18px;display:flex;align-items:center;gap:12px;box-shadow:0 15px 40px rgba(0,0,0,.28)}.player button{padding:9px 13px;background:white;color:#543640;box-shadow:none}.player span{font-size:11px;line-height:1.25}
+@media(max-width:560px){h1{font-size:50px}h2{font-size:40px}.grid{gap:8px}.photo img{height:230px}.photo:nth-child(3n) img{height:290px}.final h2{font-size:45px}.content{padding-top:25px}}
+</style>
+</head>
+<body>
+<div id="opening" class="screen">
+  <span class="glow g1"></span><span class="glow g2"></span>
+  <span class="float f1">✦</span><span class="float f2">♡</span><span class="float f3">✦</span><span class="float f4">♡</span>
+  <div class="card fade">
+    <div class="badge">🎂 birthday surprise</div>
+    <h1>Hi, John Rafael.</h1>
+    <p class="sub">Someone wanted to make your birthday a little more memorable. But before anything else...</p>
+    <p><b>Are you curious? 👀</b></p>
+    <div class="buttons"><button class="primary" onclick="curious()">CURIOUS 👀</button><button class="secondary" id="noBtn">NOT CURIOUS 😌</button></div>
+    <div class="tease" id="tease"></div>
+  </div>
+</div>
+
+<div id="knew" class="screen hidden">
+  <div class="card fade">
+    <div style="font-size:52px">🤭</div><div class="kicker">okay, we knew you would</div>
+    <h1>I knew it.</h1>
+    <p>Since you're already curious...<br>you might as well see the rest. 👀</p>
+    <button class="primary" onclick="showMusic()">CONTINUE 🎁</button>
+  </div>
+</div>
+
+<main id="main" class="hidden">
+<div class="content">
+  <div class="topnote fade"><div class="tiny">from Mia, with a little birthday magic</div><h2>A tiny surprise for your special day.</h2><p>Nothing too serious. Just a few memories, a song, and a message for someone who's been making things a little more interesting lately. 🤍</p></div>
+
+  <div class="music-card fade">
+    <div class="record"></div><div class="section-label">first, play this</div><div class="song">You Became My Peace</div>
+    <div class="song-note">Press play, then keep scrolling. 🎵</div><div class="playrow"><button class="primary" id="playBtn" onclick="startMusic()">▶ PLAY SONG</button></div>
+  </div>
+
+  <section class="gallery">
+    <div class="section-label">a few moments worth keeping</div><h2>Us, in little pictures. 📸</h2>
+    <div class="grid">
+      <div class="photo"><img src="images/photo1.jpeg" alt="Memory 1"></div><div class="photo"><img src="images/photo2.jpeg" alt="Memory 2"></div>
+      <div class="photo"><img src="images/photo3.jpeg" alt="Memory 3"></div><div class="photo"><img src="images/photo4.jpeg" alt="Memory 4"></div>
+      <div class="photo"><img src="images/photo5.jpeg" alt="Memory 5"></div><div class="photo"><img src="images/photo6.jpeg" alt="Memory 6"></div>
+      <div class="photo"><img src="images/photo7.jpeg" alt="Memory 7"></div><div class="photo"><img src="images/photo8.jpeg" alt="Memory 8"></div>
+      <div class="photo"><img src="images/photo9.jpeg" alt="Memory 9"></div><div class="photo"><img src="images/photo10.jpeg" alt="Memory 10"></div>
+    </div>
+  </section>
+
+  <section class="note">
+    <div class="section-label">your birthday note</div><h2>Happy Birthday, John. 🎂</h2><div class="birthday">A little wish for you today ✨</div>
+    <p>Wishing you endless happiness, laughter and love. 💖</p><p>May your dreams come true today! 🙏🏼 I'm so lucky to be able to celebrate with you. Cheers! 🥂</p>
+    <p style="margin-top:22px">I hope this little surprise made you smile, even just a little.</p>
+  </section>
+</div>
+
+<section class="final"><div class="final-card fade">
+  <div class="heartline">♡ ✦ ♡</div><div class="section-label">okay... one last thing</div><h2>I hope you're still courting me. 🤍</h2>
+  <p>Because somewhere between the laughs, the pictures, the little moments, and everything in between...</p>
+  <p><b>I think I'm starting to like where this is going. 👀</b></p>
+  <div class="signature">— Mia</div><button class="primary replay" onclick="window.scrollTo({top:0,behavior:'smooth'})">READ IT AGAIN ↻</button>
+</div></section>
+</main>
+
+<div id="player" class="player hidden"><button onclick="toggleMusic()" id="miniBtn">▶</button><span><b>You Became My Peace</b><br>playing while you scroll 🤍</span></div>
+<audio id="music" preload="auto" loop><source src="music.mp3" type="audio/mpeg"></audio>
+<script>
+const noBtn=document.getElementById('noBtn'),tease=document.getElementById('tease');
+const messages=['Hmm... sure ka? 👀','Ayaw mo talaga? HAHAHA','Nice try 😭','Hindi kita tatantanan.','Click Curious na kasi 🤭','Bakit ka umiiwas? 👀','HAHAHAHA nahuli kita.'];let mi=0;
+function moveNo(){const x=Math.max(8,Math.random()*(window.innerWidth-noBtn.offsetWidth-16)),y=Math.max(8,Math.random()*(window.innerHeight-noBtn.offsetHeight-16));noBtn.style.position='fixed';noBtn.style.left=x+'px';noBtn.style.top=y+'px';tease.textContent=messages[mi++%messages.length]}
+noBtn.addEventListener('mouseenter',moveNo);noBtn.addEventListener('touchstart',e=>{e.preventDefault();moveNo()},{passive:false});noBtn.addEventListener('click',e=>{e.preventDefault();moveNo()});
+function curious(){document.getElementById('opening').classList.add('hidden');document.getElementById('knew').classList.remove('hidden');scrollTo(0,0)}
+function showMusic(){document.getElementById('knew').classList.add('hidden');document.getElementById('main').classList.remove('hidden');scrollTo(0,0)}
+const music=document.getElementById('music'),player=document.getElementById('player'),playBtn=document.getElementById('playBtn'),miniBtn=document.getElementById('miniBtn');
+function startMusic(){music.play().then(()=>{player.classList.remove('hidden');playBtn.textContent='❚❚ PAUSE SONG';miniBtn.textContent='❚❚'}).catch(()=>alert('Add the song file named "music.mp3" beside index.html, then tap Play again. 🎵'))}
+function toggleMusic(){if(music.paused){music.play();miniBtn.textContent='❚❚';playBtn.textContent='❚❚ PAUSE SONG'}else{music.pause();miniBtn.textContent='▶';playBtn.textContent='▶ PLAY SONG'}}
+</script>
+</body></html>
